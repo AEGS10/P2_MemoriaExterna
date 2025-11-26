@@ -25,27 +25,27 @@ class MainActivity : AppCompatActivity() {
         tvRuta = findViewById(R.id.tvRuta)
         layoutArchivos = findViewById(R.id.layoutArchivos)
 
-        // ====== ACTIVIDAD 1 ======
+        // ACTIVIDAD 1
         findViewById<Button>(R.id.btnGuardar).setOnClickListener { guardarArchivoUnico() }
         findViewById<Button>(R.id.btnLeer).setOnClickListener { leerArchivoUnico() }
         findViewById<Button>(R.id.btnEliminar).setOnClickListener { eliminarArchivoUnico() }
 
-        // ====== ACTIVIDAD 2 ======
+        // ACTIVIDAD 2
         findViewById<Button>(R.id.btnNotas).setOnClickListener { guardarArchivoMultiple("notas.txt") }
         findViewById<Button>(R.id.btnDatos).setOnClickListener { guardarArchivoMultiple("datos.txt") }
         findViewById<Button>(R.id.btnConfig).setOnClickListener { guardarArchivoMultiple("config.json") }
 
-        // ====== ACTIVIDAD 3 ======
+        //  ACTIVIDAD 3
         findViewById<Button>(R.id.btnCrearCarpeta).setOnClickListener { crearCarpetaReportes() }
         findViewById<Button>(R.id.btnGuardarReporte).setOnClickListener { guardarArchivoEnReportes("reporte.txt") }
 
-        // ====== ACTIVIDAD 4 ======
+        //  ACTIVIDAD 4
         findViewById<Button>(R.id.btnListar).setOnClickListener { listarArchivos() }
     }
 
-    // ============================
+
     // ACTIVIDAD 1
-    // ============================
+
     private fun guardarArchivoUnico() {
         val texto = etContenido.text.toString()
         if (texto.isEmpty()) { Toast.makeText(this,"Escribe algo",Toast.LENGTH_SHORT).show(); return }
@@ -73,9 +73,9 @@ class MainActivity : AppCompatActivity() {
         } else { Toast.makeText(this,"No existe archivo",Toast.LENGTH_SHORT).show() }
     }
 
-    // ============================
+
     // ACTIVIDAD 2
-    // ============================
+
     private fun guardarArchivoMultiple(nombre: String) {
         val texto = etContenido.text.toString()
         if (texto.isEmpty()) { Toast.makeText(this,"Escribe algo",Toast.LENGTH_SHORT).show(); return }
@@ -86,9 +86,9 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this,"$nombre guardado",Toast.LENGTH_SHORT).show()
     }
 
-    // ============================
+
     // ACTIVIDAD 3
-    // ============================
+
     private fun crearCarpetaReportes() {
         val carpeta = File(getExternalFilesDir(null), CARPETA_REPORTES)
         if (!carpeta.exists()) {
@@ -111,9 +111,9 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this,"$nombreArchivo guardado en MisReportes",Toast.LENGTH_SHORT).show()
     }
 
-    // ============================
+
     // ACTIVIDAD 4 - Mini Explorador
-    // ============================
+
     private fun listarArchivos() {
         layoutArchivos.removeAllViews()
         val carpeta = getExternalFilesDir(null)
