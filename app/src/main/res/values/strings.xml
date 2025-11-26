@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiAppArchivos</string>
+
+    <string name="hint_escribe_algo">Escribe algo para guardar</string>
+    <string name="btn_guardar">Guardar archivo externo</string>
+    <string name="btn_leer">Leer archivo externo</string>
+    <string name="titulo_ruta_archivo">Ruta del archivo:</string>
+</resources>

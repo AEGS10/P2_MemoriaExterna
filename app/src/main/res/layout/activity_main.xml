@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- EditText para todas las actividades -->
+        <EditText
+            android:id="@+id/etContenido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe el contenido aquí" />
+
+        <!-- ================= ACTIVIDAD 1 ================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDAD 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar archivo externo" />
+
+        <Button
+            android:id="@+id/btnLeer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leer archivo externo" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar archivo externo" />
+
+        <!-- ================= ACTIVIDAD 2 ================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDAD 2"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar en notas.txt" />
+
+        <Button
+            android:id="@+id/btnDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar en datos.txt" />
+
+        <Button
+            android:id="@+id/btnConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar en config.json" />
+
+        <!-- ================= ACTIVIDAD 3 ================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDAD 3"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnCrearCarpeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear carpeta MisReportes" />
+
+        <Button
+            android:id="@+id/btnGuardarReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar archivo en MisReportes" />
+
+        <!-- ================= ACTIVIDAD 4 ================= -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVIDAD 4 - Mini Explorador"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar archivos" />
+
+        <LinearLayout
+            android:id="@+id/layoutArchivos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+        </LinearLayout>
+
+        <!-- TextView para mostrar rutas y mensajes -->
+        <TextView
+            android:id="@+id/tvRuta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado..."
+            android:textSize="16sp"
+            android:paddingTop="15dp"/>
+
+    </LinearLayout>
+</ScrollView>
